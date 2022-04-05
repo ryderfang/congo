@@ -93,6 +93,10 @@
       {{/* Theme attribution */}}
       {{ if .Site.Params.footer.showThemeAttribution | default true }}
         <p class="text-xs text-neutral-500 dark:text-neutral-400">
+          © 2022 &lt;/&gt;∙
+          <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
+            沪ICP备2021031507号-1</a> ∙
+          </a>
           {{ $hugo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
             href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a>`
           }}
