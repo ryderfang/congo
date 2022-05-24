@@ -102,6 +102,7 @@
           }}
           {{ $congo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>` }}
           {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Congo" $congo) | safeHTML }}
+          ∙ PV <u><span id="busuanzi_value_site_pv"></span></u> | UV <u><span id="busuanzi_value_site_uv"></span></u>
         </p>
       {{ end }}
     </div>
@@ -141,4 +142,5 @@
   {{ if templates.Exists "partials/extend-footer.html" }}
     {{ partial "extend-footer.html" . }}
   {{ end }}
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </footer>
