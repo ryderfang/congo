@@ -47,6 +47,13 @@
     </section>
     <footer class="max-w-prose pt-8 print:hidden">
       {{ partial "author.html" . }}
+      <script src="https://utteranc.es/client.js"
+        repo="ryderfang/ryderfang.github.io"
+        issue-term="pathname"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+      </script>
       {{ partial "sharing-links.html" . }}
       {{ partial "article-pagination.html" . }}
       {{ if .Params.showComments | default (.Site.Params.article.showComments | default false) }}
