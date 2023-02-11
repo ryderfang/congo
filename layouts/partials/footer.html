@@ -93,7 +93,7 @@
       {{/* Theme attribution */}}
       {{ if .Site.Params.footer.showThemeAttribution | default true }}
         <p class="text-xs text-neutral-500 dark:text-neutral-400">
-          © 2022 &lt;/&gt;∙
+          © 2016-2023 &lt;/&gt;
           <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">
             沪ICP备2021031507号-1</a> ∙
           </a>
@@ -102,7 +102,7 @@
           }}
           {{ $congo := printf `<a class="hover:underline hover:decoration-primary-400 hover:text-primary-500" href="https://github.com/jpanther/congo" target="_blank" rel="noopener noreferrer">Congo</a>` }}
           {{ i18n "footer.powered_by" (dict "Hugo" $hugo "Congo" $congo) | safeHTML }}
-          ∙ PV <u><span id="busuanzi_value_site_pv"></span></u> | UV <u><span id="busuanzi_value_site_uv"></span></u>
+          ∙ PV: <u><span id="busuanzi_value_site_pv"></span></u> | UV: <u><span id="busuanzi_value_site_uv"></span></u>
         </p>
       {{ end }}
     </div>
